@@ -7,10 +7,10 @@ let response_data = []
 textarea.addEventListener('input', (e) => {
     let timestamp = new Date();
     response_data.push([timestamp, e.data]);
-    console.log(e.data);
-    console.log(e.code)
-    console.log(`Key "${e.data}" input  [event: input]`);
-    console.log(response_data);
+    //console.log(e.data);
+    //console.log(e.code)
+    //console.log(`Key "${e.data}" input  [event: input]`);
+    //console.log(response_data);
 
   });
 
