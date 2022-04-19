@@ -1,0 +1,25 @@
+body {
+    font-family: "Inconsolata";  
+    font-size: 20px;
+}
+
+.typing-container {
+    display: flex;
+    justify-content: left;
+    align-items: center; /* vertically aligns content */
+}
+.input-cursor {
+    display: inline-block;
+    width: 1.5px;
+    height: 25px;
+    background-color: black;
+    /* margin-left: 8px; */
+    animation: blink .6s linear infinite alternate;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+}
