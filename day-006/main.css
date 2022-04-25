@@ -1,0 +1,31 @@
+body {
+    font-family: 'Antarctican-Mono', sans-serif;
+    margin: 5% 5%;
+}
+
+#title{
+    position: relative
+}
+
+#title > h1 {
+    position: absolute;
+    font-size: 50px;
+    line-height: 80%;
+    text-align: center;
+    animation: moving 1s ease-out infinite;
+}
+
+#title > h1:first-child{
+    transform: rotate(-9deg);
+    z-index: 1;  /* make sure it's in front of trails */
+    animation: none !important;
+}
+
+#title >h1:nth-child(2){
+    animation-delay: .2s;
+}
+
+@keyframes moving {
+    from {transform: translateX(0px) translateY(0px) rotate(-9deg); opacity: 40%}
+    to {transform: translateX(-40px) translateY(7.5px) rotate(-9deg); opacity: 0%}
+}
